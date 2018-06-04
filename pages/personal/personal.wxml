@@ -1,0 +1,19 @@
+<view class='detail-container'>
+  <view class='friend-container' catchtap='onFriendChat'>
+    <image catchtap='onFriendDetail' class='friend-head' src='/images/avatar/3.png'></image>
+    <view class='name-message'>
+      <text class='friend-name'>vhbn</text>
+      <text class='friend-message'>XX有限公司</text>
+    </view>
+  </view>
+
+  <view class='summary'>
+    <view class='detail-edit' catchtap='onMeeting'>
+      <text class='edit-font'>注册会议</text>
+    </view>
+
+    <view class='detail-exit' catchtap='onLogout'>
+      <text class='exit-font'>注销</text>
+    </view>
+  </view>
+</view>

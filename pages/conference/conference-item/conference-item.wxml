@@ -1,0 +1,19 @@
+<template name="conferenceTemplate">
+  <view class='conference-container' catchtap='onChat'>
+    <image catchtap='' class='conference-head' src='/images/avatar/2.png'></image>
+    <view class='title-detail'>
+      <text class='conference-title'>会议</text>
+      <view class='row'>
+        <text class='conference-time'>时间</text>
+        <text wx:if="{{true}}" class='row-right'>2019/02/06</text>
+      </view>
+      <view class='row'>
+        <text class='conference-time'>地点</text>
+        <text wx:if="{{true}}" class='row-right'>大型XX赛场</text>
+      </view>
+      <text class='conference-ing'>正在进行</text>
+      <text wx:if="{{false}}" class='conference-ing'>报名中</text>
+    </view>
+  </view>
+  <view class='hr'></view>
+</template>

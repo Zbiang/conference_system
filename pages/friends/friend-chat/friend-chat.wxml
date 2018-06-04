@@ -1,0 +1,4 @@
+<import src="../../template/chat/chat-template.wxml" />
+<view>
+  <template is="chatTemplate" data="{{messageBody}}"/>
+</view>

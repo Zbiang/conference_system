@@ -1,0 +1,11 @@
+<view class='container'>
+  <image class='user-avatar' src='/images/avatar/3.png'></image>
+  <view class='login-container'>
+    <input bindblur='onBindName' type='text' placeholder='用户名'></input>
+    <input bindblur='onBindPassword' type='password' placeholder='密码'></input>
+  </view>
+  <view class='moto-container' bindtap='onTap' catchtap='onLoginTap'>
+    <text class='moto'>登录</text>
+  </view>
+  <text class='register' bindtap='onRegrister'>注册</text>
+</view>

@@ -1,0 +1,23 @@
+<template name="detailTemplate">
+  <view class='detail-container'>
+    <view class='cell-container' catchtap='onChat'>
+      <image catchtap='onDetail' class='cell-head' src='/images/avatar/1.png'></image>
+      <view class='name-message'>
+        <text class='cell-name'>vhbn</text>
+        <text class='cell-message'>掏粪有限公司</text>
+      </view>
+    </view>
+
+    <view class='detail-conferenced'>
+      <text class='detail-font'>参加过的会议</text>
+    </view>
+
+    <view class='detail-edit'>
+      <text class='edit-font'>编辑个人信息</text>
+    </view>
+
+    <view class='detail-exit'>
+      <text class='exit-font'>hh</text>
+    </view>
+  </view>
+</template>

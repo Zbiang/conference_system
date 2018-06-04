@@ -1,0 +1,8 @@
+<template name="scoreTemplate">
+  <view class='score-container'>
+    <view class='score'>
+      <image class='score-image' src='/images/icon/star.png'></image>
+      <image class='score-image' src='/images/icon/none-star.png'></image>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,24 @@
+<template name="chatTemplate">
+  <view class='send-container'>
+    <scroll-view class='cast-imgs' scroll-x="true" style='width:100%'>
+        <view class='receive-text-container'>
+          <image class='receive-chat-image' src='/images/avatar/4.png'></image>
+          <view class='receive-chat-text'>
+            <text class='receive-chat-time'>2016/02/02</text>
+            <text class='receive-chat-content'>这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的消这是一条很短的</text>
+          </view>
+        </view>
+        <view class='send-text-container'>
+          <view class='send-chat-text'>
+            <text class='send-chat-time'>2016/02/02</text>
+            <text class='send-chat-content'>{{messageBody}}</text>
+          </view>
+          <image class='send-chat-image' src='/images/avatar/4.png'></image>
+        </view>
+    </scroll-view>
+    <view class='input-container'>
+      <input bindblur='onInputText' type='text' class='sendInput' placeholder='请输入内容' placeholder-class='placeholder'></input>
+      <icon type='search' catchtap='onSendMessage' class='search-img' size="20" color='#405f80'></icon>
+    </view>
+  </view>
+</template>

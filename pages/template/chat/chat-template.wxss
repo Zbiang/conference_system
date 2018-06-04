@@ -1,0 +1,85 @@
+.send-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  background-color: #f2f2f2;
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.sendInput{
+  font-size: 28rpx;
+  width: 600rpx;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.search-img {
+  margin: auto 0 auto 20rpx;
+}
+
+.receive-chat-image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.receive-text-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.receive-chat-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  background-color: #3366ff;
+  border-radius: 20rpx;
+  padding:10rpx 10rpx;
+}
+
+.receive-chat-content {
+  font-size: 35rpx;
+  width: 600rpx;
+  color: #ffffff;
+}
+
+.receive-chat-time {
+  color: #000;
+}
+
+.send-chat-image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.send-text-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.send-chat-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  background-color: #999;
+  border-radius: 20rpx;
+  padding:10rpx 10rpx;
+}
+
+.send-chat-content {
+  font-size: 35rpx;
+  width: 600rpx;
+  color: #ffffff;
+}
+
+.send-chat-time {
+  color: #000;
+}

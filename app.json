@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/regrister/regrister",
+    "pages/friends/friends",
+    "pages/groups/groups",
+    "pages/conference/conference",
+    "pages/friends/friend-chat/friend-chat",
+    "pages/friends/friend-detail/friend-detail",
+    "pages/personal/personal",
+    "pages/groups/groups-detail/groups-detail",
+    "pages/groups/groups-chat/groups-chat",
+    "pages/conference/conference-detail/conference-detail",
+    "pages/personal/registerMeeting/registerMeeting"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#339999"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "好友",
+        "iconPath": "images/tab/联系人1.png",
+        "selectedIconPath": "images/tab/联系人2.png"
+      },
+      {
+        "pagePath": "pages/conference/conference",
+        "text": "会议",
+        "iconPath": "images/tab/会议室1.png",
+        "selectedIconPath": "images/tab/会议室2.png"
+      },
+      {
+        "pagePath": "pages/groups/groups",
+        "text": "组织",
+        "iconPath": "images/tab/组织2.png",
+        "selectedIconPath": "images/tab/组织1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "images/tab/用户管理1.png",
+        "selectedIconPath": "images/tab/用户管理2.png"
+      }
+    ]
+  }
+}

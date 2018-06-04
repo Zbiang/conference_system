@@ -1,0 +1,19 @@
+<import src="../template/cell/cell-template.wxml" />
+
+<view class='search'>
+  <icon type='search' class='search-img' size="13" color='#405f80'></icon>
+  <input type='text' placeholder='gua' placeholder-class='placeholder' bindfocus='onBindFocus' bindblur='onBindChange'></input>
+  <image src='/images/icon/xx.png' class='xx-image' wx:if="{{xxImageShow}}" catchtap='onCancelImgTap'></image>
+</view>
+
+<view class='container' wx:if="{{containerShow}}">
+  <scroll-view class='cast-imgs' scroll-x="true" style='width:100%'>
+    <view data-friendId='2'>
+      <template is="cellTemplate" data="{{friends: friendsData.friends}}" />
+    </view>
+  </scroll-view>
+</view>
+
+<view class='search-pannel' wx:if="{{searchPanelShow}}">
+  <template is="movieGridTemplate" data="{{...searchResult}}" />
+</view>

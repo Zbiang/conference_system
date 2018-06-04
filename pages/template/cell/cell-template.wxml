@@ -1,0 +1,13 @@
+<template name="cellTemplate">
+  <block wx:for="{{friends}}" wx:for-item="friend">
+    <view class='cell-container' catchtap='onChat' data-friendId="{{friend.userId}}">
+      <image catchtap='onDetail' class='cell-head' src='/images/avatar/1.png'></image>
+      <!-- {{friend.avatar}} -->
+      <view class='name-message'>
+        <text class='cell-name'>{{friend.userName}}</text>
+        <text class='cell-message'>{{friend.personSign}}</text>
+      </view>
+    </view>
+    <view class='hr'></view>
+  </block>
+</template>

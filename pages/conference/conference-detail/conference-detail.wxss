@@ -1,0 +1,157 @@
+@import "../conference-item/conference-item.wxss";
+@import "../stars/stars-template.wxss";
+@import "../score/score-template.wxss";
+
+.conference-gn {
+  display: flex;
+  flex-direction: row;
+  margin: 60rpx 0rpx 70rpx 70rpx;
+  width: 940rpx;
+}
+
+.gn-font {
+  font-size: 40rpx;
+  padding: 0 37rpx;
+}
+
+.conference-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40rpx;
+}
+
+.organizer {
+  display:flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+}
+
+.organizer-font {
+  margin-right: 30rpx;
+  white-space:nowrap;
+  color: #999999;
+}
+
+.organizer-name {
+  color: #f21146;
+}
+
+.introduction {
+  display:flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+
+.introduction-font {
+  color: #999;
+  /* font-size: 35rpx; */
+}
+
+.introduction-text{
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  line-height:40rpx;
+  letter-spacing: 1px;
+}
+
+.sign-up {
+  margin-top: 40rpx;
+  color: #999;
+}
+
+.conference-sign {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+}
+
+.sign-number {
+  display: flex;
+  flex-direction: row;
+}
+
+.sign-font {
+  color: #666;
+  margin-right: 30rpx;
+}
+
+.number {
+  color: #f21146;
+  font-size:22rpx;
+  margin-right: 160rpx;
+}
+
+ .cast{
+  /* margin-left:40rpx; */
+  display:flex;
+  flex-direction: column;
+  margin-top:70rpx;
+}
+
+.cast-font{
+  margin-bottom: 40rpx;
+}
+
+.conference-lottery {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+}
+
+.rating {
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+
+.overall-rating {
+  margin-right: 30rpx;
+}
+
+.rating-number {
+  color: #f21146;
+}
+
+.score-container {
+  bottom: 140rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+
+.score-jj {
+  display: flex;
+  flex-direction: column;
+}
+
+.score {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 50rpx;
+  margin-left: 100rpx;
+  width: 100%;
+}
+
+/* .score {
+  height: 17rpx;
+  display: flex;
+  flex-direction: row;
+  margin-right: 24rpx;
+  margin-top: 6rpx;
+} */
+
+.score-image1 {
+  margin-left: 150rpx;
+  padding-left: 3rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.score-image2 {
+  padding-left: 3rpx;
+  height: 60rpx;
+  width: 60rpx;
+}

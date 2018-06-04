@@ -1,0 +1,66 @@
+.detail-container {
+  background-color: #f2f2f2;
+  height: 1200rpx;
+}
+
+.cell-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  top: 40rpx;
+  background-color: #fff;
+}
+
+.name-message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.cell-head {
+  width: 140rpx;
+  height: 140rpx;
+  margin-left: 20rpx;
+}
+
+.cell-name {
+  font-size: 45rpx;
+  color: #000;
+  margin-top: 8rpx; 
+}
+
+.cell-message {
+  margin-top: 18rpx;
+  font-size: 30rpx;
+}
+
+.detail-conferenced {
+  position: absolute;
+  top: 300rpx;
+  background-color: #fff;
+  width: 100%;
+}
+
+.detail-edit {
+  position: absolute;
+  top: 500rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.detail-exit {
+  position: absolute;
+  top: 800rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.detail-font {
+  margin-right: 30rpx;
+  white-space:nowrap;
+  color: #1f3463;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-left:40rpx;
+}

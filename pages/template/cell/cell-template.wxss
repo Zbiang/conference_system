@@ -1,0 +1,35 @@
+.cell-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.name-message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.cell-head {
+  width: 140rpx;
+  height: 140rpx;
+  margin-left: 20rpx;
+}
+
+.cell-name {
+  font-size: 45rpx;
+  color: #000;
+  margin-top: 8rpx; 
+}
+
+.cell-message {
+  margin-top: 18rpx;
+  font-size: 30rpx;
+}
+
+.hr {
+  margin-top: 20rpx;
+  height:1px;
+  width: 100%;
+  background-color: #d9d9d9;
+}

@@ -1,0 +1,13 @@
+<view class='container'>
+  <image class='user-avatar' src='/images/avatar/1.png'></image>
+  <view class='resgrister-container'>
+    <input bindblur='onBindTitle' type='text' placeholder='会议内容'></input>
+    <input bindblur='onBindTime' type='text' placeholder='开始时间'></input>
+    <input bindblur='onBindAddress' type='text' placeholder='会议地点'></input>
+    <input bindblur='onBindText' type='text' placeholder='会议内容'></input>
+    <!-- <input bindblur='onBindTag' type='text' placeholder='会议标签'></input> -->
+  </view>
+  <view class='moto-container' bindtap='onTap' catchtap='onRegister'>
+    <text class='moto'>注册</text>
+  </view>
+</view>

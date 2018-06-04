@@ -1,0 +1,4 @@
+<import src="../../template/detail/detail-template.wxml" />
+<view>
+  <template is="detailTemplate" />
+</view>

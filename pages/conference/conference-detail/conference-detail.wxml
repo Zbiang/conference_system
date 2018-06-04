@@ -1,0 +1,102 @@
+<import src="../conference-item/conference-item.wxml" />
+<import src="../stars/stars-template.wxml" />
+<import src="../score/score-template.wxml" />
+
+<view class='container'>
+  <view data-friendId='2'>
+    <template is="conferenceTemplate" />
+  </view>
+  <view class='conference-gn'>
+    <text wx:if="{{detailShow}}" class='gn-font' style='font-size:45rpx;border-bottom:2px solid #666;padding-bottom:20rpx;'>详情</text>
+    <text wx:else class='gn-font' catchtap='onDetail'>详情</text>
+    <text wx:if="{{signShow}}" class='gn-font' style='font-size:45rpx;border-bottom:2px solid #666;padding-bottom:20rpx;'>成员</text>
+    <text wx:else class='gn-font' catchtap='onSign'>成员</text>
+    <text wx:if="{{scoreShow}}" class='gn-font' style='font-size:45rpx;border-bottom:2px solid #666;padding-bottom:20rpx;'>评分</text>
+    <text wx:else class='gn-font' catchtap='onScore'>评分</text>
+    <text wx:if="{{lotteryShow}}" class='gn-font' style='font-size:45rpx;border-bottom:2px solid #666;padding-bottom:20rpx;'>抽奖</text>
+    <text wx:else class='gn-font' catchtap='onLottery'>抽奖</text>
+  </view>
+
+  <view class='hr'></view>
+
+  <view class='conference-detail' wx:if='{{detailShow}}'>
+    <view class='organizer'>
+      <text class='organizer-font'>举办方</text>
+      <text class='organizer-name'>XX有限公司</text>
+    </view>
+    <view class='introduction'>
+      <text class='introduction-font'>会议简介</text>
+      <text class='introduction-text'>这是一个很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大很大的</text>
+    </view>
+     <text class='sign-up' catchtap='onbmTap'>报名</text>
+    <!-- <web-view class='sign-up' src="https://meeting.maphical.cn/Meeting-Interactive-System/danmu.html">报名</web-view> -->
+  </view>
+
+  <view class='conference-sign' wx:if='{{signShow}}'>
+
+    <view class='sign-number'>
+      <text class='sign-font'>签到人数</text>
+      <text class='number'>8</text>
+      <!-- <text class='sign-font'>签到:</text>
+      <icon catchtap='onSignTap' type='success' size='46' color='rgb(178,178,178)' wx:if="{{signIconShow}}"></icon>
+      <icon catchtap='onSignTap' type='success' size='46' wx:else></icon> -->
+    </view>
+
+    <view class='cast'>
+      <text class='cast-font'>会议成员</text>
+      <scroll-view class='cast-imgs' scroll-x="true" style='width:100%'>
+        <block wx:for="{{movie.castsInfo}}" wx:for-item="item">
+          <view class='cast-container'>
+            <image class='cast-img' src='{{item.img}}'></image>
+            <text class='cast-name'>{{item.name}}</text>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+
+  </view>
+
+  <view class='conference-score' wx:if='{{scoreShow}}'>
+
+    <view class='rating'>
+      <text class='overall-rating'>综合评分</text>
+      <text class='rating-number'>2.0</text>
+    </view>
+
+    <view class='score-jj'>
+      <scroll-view class='cast-imgs' scroll-y="true" style='height:100%'>
+        <block wx:for="[1, 1, 1, 1, 1]" wx:for-item="item">
+          <view class='score-container'>
+            <image class='score-image1' src='/images/icon/star.png'></image>
+            <image class='score-image2' src='/images/icon/none-star.png'></image>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+
+    <view>
+      <view class='score'>
+        <view class='score-stars'>
+          <template is="starsTemplate" data="{{stars: stars}}" />
+        </view>
+        <text class='score-button'>评分</text>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='conference-lottery' wx:if='{{lotteryShow}}'>
+    <text class='lottery-button'>开始抽奖</text>
+    <view>
+      <text class='prize-name'>奖品：</text>
+      <text>XXX</text>
+    </view>
+    <view>
+      <text class='lottery-people'>中奖者：</text>
+      <text>wowowo</text>
+    </view>
+    <view>
+      <text>评论</text>
+    </view>
+  </view>
+</view>
